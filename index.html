@@ -2,14 +2,17 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
     <title>Pixel Art Maker!</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
+  <!-- Grid directions and input: height, width, color -->
   <div class="grid-input">
     <h2>Create your board</h2>
+    <!-- Grid Size -->
     <div class="grid-size">
       <h3>Choose Grid Size:</h3>
       <form id="sizePicker">
@@ -20,6 +23,7 @@
           <input type="submit" class="submit">
       </form>
     </div>
+    <!-- Grid color -->
     <div class="grid-color">
       <h3>Pick A Color:</h3>
       <input type="color" id="colorPicker" value="#05C2AE">
@@ -28,10 +32,12 @@
       <h3>Hover over the board to create a design.</h3>
     </div>
   </div>
+    <!-- Grid Canvas -->
   <h1 id="title">Lab: Pixel Art Maker</h1>
   <div class="design-canvas">
     <table id="pixel_canvas"></table>
   </div>
-    <script src="designs.js"></script>
+  <!-- Link to JS file -->
+  <script src="designs.js"></script>
 </body>
 </html>
