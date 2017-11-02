@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pixel Art Maker!</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
     <link rel="stylesheet" href="styles.css">
@@ -8,25 +9,23 @@
 </head>
 <body>
   <div class="grid-input">
+    <h2>Create your board</h2>
     <div class="grid-size">
-      <h2>Choose Grid Size</h2>
+      <h3>Choose Grid Size:</h3>
       <form id="sizePicker">
           Height:
-          <input type="number" id="input_height" name="height" min="1" max="100" value="1">
+          <input type="number" id="input_height" name="height" min="1" max="40" value="1">
           Width:
-          <input type="number" id="input_width" name="width" min="1" max="100" value="1">
-          <input type="submit" id="submit">
+          <input type="number" id="input_width" name="width" min="1" max="40" value="1">
+          <input type="submit" class="submit">
       </form>
-      <div class="clear-design">
-        <span>
-          <button id="clear-grid">Clear Design
-          </button>
-        </span>
-      </div>
     </div>
     <div class="grid-color">
-      <h2>Pick A Color</h2>
-      <input type="color" id="colorPicker">
+      <h3>Pick A Color:</h3>
+      <input type="color" id="colorPicker" value="#05C2AE">
+    </div>
+    <div class="hover">
+      <h3>Hover over the board to create a design.</h3>
     </div>
   </div>
   <h1 id="title">Lab: Pixel Art Maker</h1>
