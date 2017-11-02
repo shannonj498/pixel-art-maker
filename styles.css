@@ -1,17 +1,31 @@
+html {
+  width: 100%;
+}
+
 body {
     font-size: 16px;
     margin: 0 auto;
+    font-family: helvetica;
 }
 
 h1 {
     font-family: Monoton;
     font-size: 3rem;
     margin: 0.2em;
-    color: #3397C5;
+    color: #646464;
 }
 
 h2 {
+    margin: 2rem 0 0.25em;
+    border-bottom: 1px solid rgba(217, 217, 217, 0.3);
+    padding-bottom: 2rem;
+    padding-top: .5rem;
+    margin-bottom: 2rem;
+}
+
+h3 {
     margin: 1em 0 0.25em;
+    font-weight: normal;
 }
 
 h2:first-of-type {
@@ -47,19 +61,29 @@ input[type=number] {
   height: 100%;
   padding: 2rem 2rem 2rem 1.5rem;
   position: fixed;
-  background-color: #555D79;
+  background-color: #2E3F5F;
   border-radius: 5px;
   box-shadow: 5px 5px 18px #A7A7A7;
   text-align: center;
   margin-top: -1rem;
+  color: white;
 }
 
-#submit {
+.submit {
   display: block;
   margin: 0 auto;
   margin-top: 1rem;
   font-size: 1rem;
-  padding: 1rem;
+  padding: .8rem 1.3rem;
+  border-radius: 5px;
+  background-color: #05C2AE;
+  border: none;
+  color: white;
+}
+
+.submit:hover {
+  background-color: #B4F1D2;
+  color: black;
 }
 
 .design-canvas {
@@ -69,5 +93,79 @@ input[type=number] {
 #title {
   margin-left: 23rem;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
+  padding-top: 2rem;
+}
+
+.grid-size {
+  line-height: 3rem;
+}
+
+.grid-color {
+  line-height: 3rem;
+  margin: 3rem 0;
+}
+
+#input_height, #input_width {
+  border-radius: 5px;
+  border: none;
+  padding: .3rem;
+  width: 3rem;
+  margin-right: .8rem;
+}
+
+#colorPicker {
+  border-radius: 5px;
+  width: 5rem;
+  background-color: white;
+}
+
+@media only screen and (max-width: 780px) {
+  html {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .grid-input {
+    margin: 0;
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .design-canvas {
+    margin-left: 2.5rem;
+    padding-top: 2rem;
+  }
+
+  #title {
+    margin: 0 auto;
+    padding-top: 1rem;
+    width: 100%;
+  }
+
+  .grid-size {
+    line-height: 1.5rem;
+  }
+
+  .grid-color {
+    line-height: 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  h2 {
+      margin: 1rem 0 0.25em;
+      padding-bottom: 1rem;
+      padding-top: 0;
+      margin-bottom: 1rem;
+  }
+
+  h1 {
+      font-size: 1.5rem;
+      margin: 0 auto;
+      text-align: center;
+      color: #646464;
+      padding-left: 1.4rem;
+  }
 }
