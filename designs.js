@@ -23,12 +23,12 @@ function makeGrid() {
     }
     
     // insert cells based on width and height
-    for (var row = 0; row < width; row++) {
+    for (var row = 0; row < height; row++) {
       newRow = table.insertRow();
-      for (var column = 0; column < height; column++) {
+      for (var column = 0; column < width; column++) {
         newCell = newRow.insertCell();
         // change cell background color on hover
-        newCell.onmouseover = changeColor;
+        newCell.onclick = changeColor;
       }
     }
   })
