@@ -1,0 +1,73 @@
+body {
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: Monoton;
+    font-size: 3rem;
+    margin: 0.2em;
+    color: #3397C5;
+}
+
+h2 {
+    margin: 1em 0 0.25em;
+}
+
+h2:first-of-type {
+    margin-top: 0.5em;
+}
+
+table,
+tr,
+td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+tr {
+    height: 20px;
+}
+
+td {
+    width: 20px;
+}
+
+input[type=number] {
+    width: 6em;
+}
+
+.grid-input {
+  margin: 0;
+  width: 18rem;
+  height: 100%;
+  padding: 2rem 2rem 2rem 1.5rem;
+  position: fixed;
+  background-color: #555D79;
+  border-radius: 5px;
+  box-shadow: 5px 5px 18px #A7A7A7;
+  text-align: center;
+  margin-top: -1rem;
+}
+
+#submit {
+  display: block;
+  margin: 0 auto;
+  margin-top: 1rem;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.design-canvas {
+  margin-left: 23rem;
+}
+
+#title {
+  margin-left: 23rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
