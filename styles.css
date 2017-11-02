@@ -82,7 +82,7 @@ input[type=number] {
 }
 
 .submit:hover {
-  background-color: #B4F1D2;
+  background-color: white;
   color: black;
 }
 
@@ -130,12 +130,14 @@ input[type=number] {
     margin: 0;
     width: 100%;
     min-width: 100%;
+    max-width: 100%;
     height: auto;
     position: relative;
+    padding: 2rem 0;
   }
 
   .design-canvas {
-    margin-left: 2.5rem;
+    margin-left: 0;
     padding-top: 2rem;
   }
 
@@ -166,6 +168,10 @@ input[type=number] {
       margin: 0 auto;
       text-align: center;
       color: #646464;
-      padding-left: 1.4rem;
+      padding-left: 0;
+  }
+
+  .hover {
+    display: none;
   }
 }
